@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactList from './ContactList'
+import ContactListLayout from './ContactListLayout'
 
 export default class App extends React.Component {
   constructor() {
@@ -21,7 +21,7 @@ export default class App extends React.Component {
       return (
         <div>
           <h1>Phone book</h1>
-          <ContactList contacts={this.state.contacts} />
+          {this.props.children}
         </div>
       )
     } else {

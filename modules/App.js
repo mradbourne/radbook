@@ -3,17 +3,17 @@ import { IndexLink } from 'react-router'
 
 export default class App extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       contacts: []
     }
   }
   componentWillMount() {
     fetch('https://radbook-1e5ca.firebaseio.com/contacts.json').then(function(response) { 
-      return response.json();
+      return response.json()
     }).then(function(j) {
-      this.setState({contacts: j});
-    }.bind(this));
+      this.setState({contacts: j})
+    }.bind(this))
   }
   render() {
     if (this.state.contacts.length) {

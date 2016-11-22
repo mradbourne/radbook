@@ -7,8 +7,8 @@ export default class ContactList extends React.Component {
     return (
       <div>
       {
-        contacts.map((contact, idx) => {
-          return <ContactThumb key={idx} name={contact.name} phone={contact.phone} />
+        contacts.map((contact) => {
+          return <ContactThumb key={contact.id} theId={contact.id} name={contact.name} phone={contact.phone} />
         })
       }
       </div>

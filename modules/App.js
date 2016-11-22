@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactList from './ContactList'
+import { IndexLink } from 'react-router'
 
 export default class App extends React.Component {
   constructor() {
@@ -19,11 +19,8 @@ export default class App extends React.Component {
     if (this.state.contacts.length) {
       return (
         <div>
-          <h1>Phone book</h1>
-          {
-            this.props.children
-            //Need pass `contacts` prop when loading ContactList component: <ContactList contacts={this.state.contacts}
-          }
+          <h1><IndexLink to="/">Phone book</IndexLink></h1>
+          {React.cloneElement(this.props.children, { contacts: this.state.contacts })}
         </div>
       )
     } else {

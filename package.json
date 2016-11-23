@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
-    "test": "mocha tests/**/*.test.js --compilers js:babel-core/register,js:./tests/testutils/env.js --recursive"
+    "test": "mocha --recursive tests/**/*.test.js --compilers js:babel-core/register,js:./tests/testutils/env.js"
   },
   "author": "",
   "license": "ISC",

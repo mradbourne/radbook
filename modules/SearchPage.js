@@ -1,19 +1,19 @@
-import React from 'react'
-import ContactList from './ContactList'
+import React from 'react';
+import ContactList from './ContactList';
 
 export default class ContactListLayout extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       searchString: ''
     }
   }
   _handleChange(e) {
-    this.setState({ searchString: e.target.value })
+    this.setState({ searchString: e.target.value });
   }
   _handleSubmit(e) {
     e.preventDefault();
-    this.setState({ searchString: this.searchBox.value })
+    this.setState({ searchString: this.searchBox.value });
     console.log(this.state.searchString);
   }
   render() {

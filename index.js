@@ -1,10 +1,10 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import App from './modules/App'
-import SearchPage from './modules/SearchPage'
-import ContactDetailPage from './modules/ContactDetailPage'
-import NoMatch from './modules/NoMatch'
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import App from './modules/App';
+import SearchPage from './modules/SearchPage';
+import ContactDetailPage from './modules/ContactDetailPage';
+import NoMatch from './modules/NoMatch';
 
 render((
   <Router history={browserHistory}>
